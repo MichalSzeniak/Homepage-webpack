@@ -1,0 +1,27 @@
+.burger {
+    display: inline-block;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    background-color: #ffffff18;
+    text-decoration: none;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+  }
+  
+  .burger:hover,
+  button:focus {
+    background: #3585e718;
+  }
+  
+  .burger:focus {
+    outline: 1px solid rgb(255, 255, 255);
+    outline-offset: -4px;
+  }
+  
+  .burger:active {
+    transform: scale(1.1);
+  }
