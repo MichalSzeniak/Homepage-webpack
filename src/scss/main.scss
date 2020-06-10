@@ -7,7 +7,7 @@
 @import 'modules/burger.scss';
 
 .navigation {
-  z-index: 2;
+  z-index: 3;
   background-color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
@@ -17,8 +17,61 @@
   align-items: center;
   &__list {
     display: none;
+    font-size: 2em;
+  }
+  &__open {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  margin-right: auto;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+}
+}
+
+.button__close {
+  display: none;
+  right: 5px;
+  position: absolute;
+  top: 40px;
+  z-index: 5;
+  border: none;
+  background-color: #ffffff18;
+  text-decoration: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+
+  &--open {
+    display: block;
   }
 }
+
+.circle {
+  top:0px;
+  right: 0px;
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  background-color: $yellow;
+  &__open {
+    z-index: 4;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $yellow;
+  }
+}
+
+
 
 .logo__img {
   height: 110px;
@@ -45,7 +98,7 @@
   font-family: 'Ubuntu', sans-serif;
   text-align: right;
   position: relative;
-  width: 1200px;
+  width: 1338px;
   height: 100vh;
   background-color: $blue;
   &__text-container {
@@ -65,20 +118,22 @@
     margin: 0;
     padding: 0;
   }
-  &__down--container {
+  &__arrow {
     position: absolute;
     margin-right: auto;
-    bottom: 2em;
+    bottom: 2rem;
     left: 0;
     right: 0;
     text-align: center; 
+    animation: arrow 3s infinite;
   }
 }
 
-.about {
+.about { 
   position: relative;
+  padding: 450px 0 200px 0;
   &__text-container {
-    padding: 500px 0 400px 100px;
+    margin-left:100px;
   }
   &__h2 {
     font-size: 4rem;
@@ -91,7 +146,32 @@
     height: 340px;
     border-radius: 50%;
     position: absolute;
-    top: 180px;
-    right: 6rem;
+    top: 12rem;
+    right: 12rem;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  .navigation {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .about {
+    padding-top: 100px;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__me{
+      margin-bottom: 2rem;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      position: static;
+    }
   }
 }

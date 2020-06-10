@@ -16,14 +16,20 @@
   }
 }
 
+@keyframes arrow {
+  0% {
+    bottom: 5px;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 5px;
+  }
+}
+
 // .about__me {
-  // z-index: 2222;
-  // width: 220px;
-  // height: 220px;
-  // border-radius: 50%;
-  // position: relative;
-  // top: -506px;
-  // left: 41%;
+//     z-index: 2;
 //   &__circles {
 //     position: absolute;
 //     top: 50%;
@@ -31,7 +37,7 @@
 //     will-change: transform;
 //     width: 220px;
 //     height: 220px;
-//     background: rgba(0, 0, 0, 0.295);
+//     background: rgba(236, 4, 4, 0.295);
 //     border-radius: 50%;
 //     animation: circles 20s ease-in infinite;
 //     &::after {
@@ -41,7 +47,7 @@
 //       will-change: transform;
 //       width: 220px;
 //       height: 220px;
-//       background: rgba(208, 223, 81, 0.281);
+//       background: rgba(229, 255, 0, 0.288);
 //       border-radius: 50%;
 //       content: "";
 //       display: block;
@@ -55,7 +61,7 @@
 //       will-change: transform;
 //       width: 220px;
 //       height: 220px;
-//       background: rgba(0, 140, 255, 0.226);
+//       background: rgba(9, 106, 185, 0.226);
 //       border-radius: 50%;
 //       content: "";
 //       display: block;

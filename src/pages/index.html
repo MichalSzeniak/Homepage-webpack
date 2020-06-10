@@ -11,19 +11,27 @@
 </head>
 
 <body>
-  <nav class="navigation">
-    <div class="logo"><img class="logo__img" src="/src/assets/img/logo 3.png" alt="Logo"></div>
-    <ul class="navigation__list">
-      <li class="navigation__list--item"><a class="navigation__link" href="">Strona główna</a></li>
-      <li class="navigation__list--item"><a class="navigation__link" href="">Notatki</a></li>
-      <li class="navigation__list--item"><a class="navigation__link" href="">Narzędzia</a></li>
-      <li class="navigation__list--item"><a class="navigation__link" href="">Projekty</a></li>
-    </ul>
-    <button class="burger"><svg viewBox="0 0 100 80" width="40" height="40">
+  <div class="menu">
+    <button class="button__close "><svg viewBox="0 0 100 80" width="40" height="40">
       <rect width="100" height="20"></rect>
-      <rect y="30" width="100" height="20"></rect>
       <rect y="60" width="100" height="20"></rect>
     </svg></button>
+  <div class="circle"></div>
+  <ul class="navigation__list">
+    <li class="navigation__list--item"><a class="navigation__link" href="">Strona główna</a></li>
+    <li class="navigation__list--item"><a class="navigation__link" href="">Notatki</a></li>
+    <li class="navigation__list--item"><a class="navigation__link" href="">Narzędzia</a></li>
+    <li class="navigation__list--item"><a class="navigation__link" href="">Projekty</a></li>
+  </ul>
+</div>
+  <nav class="navigation">
+    <div class="logo"><img class="logo__img" src="/src/assets/img/logo 3.png" alt="Logo"></div>
+
+    <button class="burger burger-js"><svg viewBox="0 0 100 80" width="40" height="40">
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+      </svg></button>
   </nav>
 
   <main class="main">
@@ -32,16 +40,18 @@
         <h1 class="header__h1">Michał</h1>
         <p class="header__p">Mikelowski</p>
       </div>
-      <div class="header__down--container">
-      <a class="header__down" href="#about"><img src="/src/assets/img/down.png" alt=""></a>
-    </div>
+      <div class="header__arrow">
+        <a class="header__arrow--link" href="#about"><img src="/src/assets/img/down.png" alt=""></a>
+      </div>
     </header>
     <section class="about" id="about">
+      <img class="about__me" src="/src/assets/img/Me.jpg" alt="">
+      <div class="about__me__circles"></div>
       <div class="about__text-container">
         <h2 class="about__h2">Hey I am Michał</h2>
         <p class="about__p">I'm learning web development 🚀</p>
       </div>
-        <img class="about__me" src="/src/assets/img/Me.jpg" alt="">
+
     </section>
   </main>
 </body>
