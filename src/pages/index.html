@@ -10,23 +10,28 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/img/favicon.ico" />
 </head>
 
-<body>
+<body class="body">
   <div class="menu">
-    <button class="button__close "><svg viewBox="0 0 100 80" width="40" height="40">
-      <rect width="100" height="20"></rect>
-      <rect y="60" width="100" height="20"></rect>
-    </svg></button>
-  <div class="circle"></div>
-  <ul class="navigation__list">
-    <li class="navigation__list--item"><a class="navigation__link" href="">Strona główna</a></li>
-    <li class="navigation__list--item"><a class="navigation__link" href="">Notatki</a></li>
-    <li class="navigation__list--item"><a class="navigation__link" href="">Narzędzia</a></li>
-    <li class="navigation__list--item"><a class="navigation__link" href="">Projekty</a></li>
-  </ul>
-</div>
+    <button class="menu__close-button">
+      <svg width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M15.0528 23.3857L0.229004 38.2095L7.56196 45.5425L22.3857 30.7187L38.1223 46.4552L45.4552 39.1223L29.7187 23.3857L45.6842 7.42024L38.3513 0.0872803L22.3857 16.0528L7.33296 1L0 8.33296L15.0528 23.3857Z"
+          fill="black" />
+      </svg>
+    </button>
+    <ul class="menu__list">
+      <li class="menu__list--item"><a class="menu__link--main here" href="">Strona główna</a></li>
+      <li class="menu__list--item"><a class="menu__link--notes" href="">Notatki</a></li>
+      <li class="menu__list--item"><a class="menu__link--tools" href="">Narzędzia</a></li>
+      <li class="menu__list--item"><a class="menu__link--projects" href="">Projekty</a></li>
+    </ul>
+  </div>
+
   <nav class="navigation">
     <div class="logo"><img class="logo__img" src="/src/assets/img/logo 3.png" alt="Logo"></div>
-
+    <div class="dark-mode">
+      <input class="checkbox" type="checkbox" name="" id="">
+    </div>
     <button class="burger burger-js"><svg viewBox="0 0 100 80" width="40" height="40">
         <rect width="100" height="20"></rect>
         <rect y="30" width="100" height="20"></rect>

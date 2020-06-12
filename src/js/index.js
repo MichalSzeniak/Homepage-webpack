@@ -5,13 +5,20 @@ import '../scss/main.scss';
 console.log('HELLO 🚀');
 
 const burger = document.querySelector(".burger-js");
-const list = document.querySelector(".navigation__list");
-const circle = document.querySelector(".circle");
-const close = document.querySelector(".button__close");
+const menuClose = document.querySelector(".menu__close-button");
+const list = document.querySelector(".menu");
+const body = document.querySelector(".body")
+const checkbox = document.querySelector(".checkbox")
 
 
 burger.addEventListener('click', ()=> {
-    list.classList.toggle("navigation__open");
-    circle.classList.toggle("circle__open");
-    close.classList.toggle("button__close--open");
+    list.classList.add("menu__open");
+    body.classList.add("body-hide-scroll")
 });
+
+menuClose.addEventListener('click', ()=> {
+    list.classList.remove("menu__open");
+    body.classList.remove("body-hide-scroll")
+});
+
+

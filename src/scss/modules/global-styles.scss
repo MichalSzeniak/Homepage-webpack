@@ -25,6 +25,10 @@ html {
     flex-direction: column;
     box-sizing: border-box;
   }
+
+  .body-hide-scroll {
+    overflow-y: hidden;
+  }
   
   a {
     text-decoration: none;
