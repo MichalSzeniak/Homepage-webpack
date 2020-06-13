@@ -6,8 +6,7 @@
   box-sizing: inherit;
   scroll-behavior: smooth;
   margin: 0;
-  padding: 0;
-  
+  padding: 0; 
 }
 
 html {
@@ -18,7 +17,12 @@ html {
     padding: 0;
   }
   
+  .main {
+    box-shadow: 0px 4px 53px rgba(0, 0, 0, 0.25);
+  }
+
   body {
+    background-color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;

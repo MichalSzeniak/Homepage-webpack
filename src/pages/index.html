@@ -20,23 +20,28 @@
       </svg>
     </button>
     <ul class="menu__list">
-      <li class="menu__list--item"><a class="menu__link--main here" href="">Strona główna</a></li>
-      <li class="menu__list--item"><a class="menu__link--notes" href="">Notatki</a></li>
-      <li class="menu__list--item"><a class="menu__link--tools" href="">Narzędzia</a></li>
-      <li class="menu__list--item"><a class="menu__link--projects" href="">Projekty</a></li>
+      <li class="menu__list--item"><a class="menu__link menu__link--main here" href="">Strona główna</a></li>
+      <li class="menu__list--item"><a class="menu__link menu__link--notes" href="">Notatki</a></li>
+      <li class="menu__list--item"><a class="menu__link menu__link--tools" href="">Narzędzia</a></li>
+      <li class="menu__list--item"><a class="menu__link menu__link--projects" href="">Projekty</a></li>
     </ul>
   </div>
 
   <nav class="navigation">
     <div class="logo"><img class="logo__img" src="/src/assets/img/logo 3.png" alt="Logo"></div>
     <div class="dark-mode">
-      <input class="checkbox" type="checkbox" name="" id="">
+      <input class="checkbox" type="checkbox" name="ns" id="ns">
+      <label for="ns">
+        <span class="check"></span>
+      </label>
     </div>
-    <button class="burger burger-js"><svg viewBox="0 0 100 80" width="40" height="40">
+    <button class="burger burger-js">
+      <svg class="burger__svg" viewBox="0 0 100 80" width="40" height="40">
         <rect width="100" height="20"></rect>
         <rect y="30" width="100" height="20"></rect>
         <rect y="60" width="100" height="20"></rect>
-      </svg></button>
+      </svg>
+    </button>
   </nav>
 
   <main class="main">
