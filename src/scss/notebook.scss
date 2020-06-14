@@ -1,0 +1,25 @@
+.notebook {
+  margin: 300px 0 300px 0;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__textarea {
+    resize: none;
+    width: 80%;
+  }
+  &__h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .notebook__textarea {
+        width: 80%;
+    }
+}

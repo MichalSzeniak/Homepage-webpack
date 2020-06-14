@@ -40,7 +40,6 @@
     }
     &:focus {
       outline: 1px solid rgb(255, 255, 255);
-      outline-offset: -4px;
     }
     &:active {
       transform: scale(1.1);
@@ -52,32 +51,42 @@
     transform: scale(1);
   }
   &__list--item:hover {
-    padding: 10px;
-    transform: scale(1.2);
+    // padding: 2px;
+    transform: scale(1.1);
+
+    border-bottom: 1px $blue solid;
   }
   &__link{
     position: relative;
-    box-shadow: 0px 4px 1000px #ffe45e5b;
+    // box-shadow: 0px 4px 1000px #ffe45e5b;
     border-radius: 10px;
     &--main{
         &::after {
           position: absolute;
-            content: url(/src/assets/img/home.svg);
+            content: url(../assets/img/home.svg);
             padding: 10px;
             right: -84px;
         }
     }
     &--notes{
         &::after {
-            content: url(/src/assets/img/pushpin.svg);
+            content: url(../assets/img/pushpin.svg);
             padding: 10px;
             position: absolute;
             right: -84px;
         }
     }
+    &--notebook {
+      &::after {
+        content: url(../assets/img/notebook.svg);
+        padding: 10px;
+        position: absolute;
+        right: -84px;
+    }
+    }
     &--tools{
         &::after {
-            content: url(/src/assets/img/tool.svg);
+            content: url(../assets/img/tool.svg);
             padding: 10px;
             position: absolute;
             right: -84px;
@@ -85,7 +94,7 @@
     }
     &--projects{
         &::after {
-            content: url(/src/assets/img/folder.svg);
+            content: url(../assets/img/folder.svg);
             padding: 10px;
             position: absolute;
             right: -84px;

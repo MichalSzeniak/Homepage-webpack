@@ -44,11 +44,11 @@ checkbox.addEventListener('click', ()=> {
 })
 
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 80) {
+    if (window.pageYOffset > 50) {
       navigation.classList.add("navigation--test")
       logo.classList.add("logo__img--test")
     }
-    else if (window.pageYOffset < 80) {
+    else if (window.pageYOffset < 50) {
       navigation.classList.remove("navigation--test")
       logo.classList.remove("logo__img--test")
     }
