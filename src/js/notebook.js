@@ -1,10 +1,19 @@
-const textarea = document.querySelector(".notebook__textarea")
-const save = document.querySelector(".notebook__button--save")
-const load = document.querySelector(".notebook__button--load")
+const textarea = document.querySelector('.notebook__textarea');
+const save = document.querySelector('.notebook__button--save');
+const load = document.querySelector('.notebook__button--load');
 
-container = '';
+let entry = localStorage.getItem('entry');
+let  container = '';
+
+if (entry) {
+    container = entry;
+}
 
 save.addEventListener('click', ()=> {
-    textarea.value == container;
-    console.log(textarea.value)
+    container = textarea.value;
+    localStorage.setItem('entry', container)
+})
+
+load.addEventListener('click', ()=> {
+    textarea.value = container;
 })

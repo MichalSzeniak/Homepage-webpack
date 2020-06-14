@@ -1,5 +1,6 @@
 .notebook {
-  margin: 300px 0 300px 0;
+    padding-top: 200px;
+  margin: 100px 0 300px 0;
   &__container {
     display: flex;
     flex-direction: column;
@@ -8,6 +9,12 @@
     flex-wrap: wrap;
   }
   &__textarea {
+      font-size: 1.2rem;
+      background-color: var(--textarea-color);
+      color: var(--text-color);
+      border: 3px var(--text-color) solid;
+      border-radius: 5px;
+    padding: 10px;
     resize: none;
     width: 80%;
   }

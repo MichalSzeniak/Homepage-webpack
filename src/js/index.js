@@ -36,13 +36,16 @@ checkbox.addEventListener('click', ()=> {
       document.documentElement.style.setProperty('--background-color','rgb(24, 24, 24)');
       document.documentElement.style.setProperty('--background-menu', 'rgb(51, 51, 51)');
       document.documentElement.style.setProperty('--header-color', 'rgb(51, 51, 51)');
+      document.documentElement.style.setProperty('--textarea-color', 'rgb(51, 51, 51)');
     }
+
     else {
       check.classList.remove("checked");
       document.documentElement.style.setProperty('--text-color','rgb(24, 24, 24)');
       document.documentElement.style.setProperty('--background-color','white');
       document.documentElement.style.setProperty('--background-menu', '#FFE45E');
       document.documentElement.style.setProperty('--header-color', '#09A5FC');
+      document.documentElement.style.setProperty('--textarea-color', '#ffe45e69');
     }
 })
 
