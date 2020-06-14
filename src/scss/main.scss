@@ -13,7 +13,8 @@
   --background-color: rgb(255, 255, 255);
   --background-menu: #FFE45E;
   --header-color: #09A5FC;
-  --textarea-color: #ffe45e69;
+  // --textarea-color: #ffee005d;
+  --textarea-color: #c7e4ff5d;
 }
 .navigation {
   z-index: 3;
@@ -268,5 +269,9 @@
   box-sizing: 10px 10px 10px 10px rgb(0, 0, 0);
   &__h2{
     font-weight: normal;
+    color: var(--text-color)
+  }
+  &__time {
+    color: var(--text-color);
   }
 }

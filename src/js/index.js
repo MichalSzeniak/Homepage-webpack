@@ -45,7 +45,7 @@ checkbox.addEventListener('click', ()=> {
       document.documentElement.style.setProperty('--background-color','white');
       document.documentElement.style.setProperty('--background-menu', '#FFE45E');
       document.documentElement.style.setProperty('--header-color', '#09A5FC');
-      document.documentElement.style.setProperty('--textarea-color', '#ffe45e69');
+      document.documentElement.style.setProperty('--textarea-color', '#c7e4ff5d');
     }
 })
 
