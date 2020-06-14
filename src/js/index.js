@@ -1,4 +1,5 @@
 import '../scss/main.scss';
+import moment from 'moment';
 
 /* place your code below */
 
@@ -12,7 +13,9 @@ const checkbox = document.querySelector(".checkbox");
 const check = document.querySelector(".check");
 const navigation = document.querySelector(".navigation");
 const logo = document.querySelector(".logo__img");
+const time = document.querySelector(".time");
 
+time.innerHTML = moment().format("MMM Do YY"); 
 
 burger.addEventListener('click', ()=> {
     list.classList.add("menu__open");

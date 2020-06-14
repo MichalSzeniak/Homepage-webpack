@@ -256,3 +256,16 @@
     transition: 0.5s ease-in-out;
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: #09ecfc2a;
+  box-sizing: 10px 10px 10px 10px rgb(0, 0, 0);
+  &__h2{
+    font-weight: normal;
+  }
+}
