@@ -41,6 +41,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "dependencies": {
+    "gsap": "file:gsap-bonus.tgz",
     "moment": "^2.26.0",
     "normalize.css": "^8.0.1"
   }
