@@ -7,6 +7,7 @@ let  container = '';
 
 if (entry) {
     container = entry;
+    textarea.value = container;
 }
 
 save.addEventListener('click', ()=> {
@@ -14,6 +15,6 @@ save.addEventListener('click', ()=> {
     localStorage.setItem('entry', container)
 })
 
-load.addEventListener('click', ()=> {
-    textarea.value = container;
-})
+// load.addEventListener('click', ()=> {
+//     textarea.value = container;
+// })
