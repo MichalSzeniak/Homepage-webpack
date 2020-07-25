@@ -7,6 +7,7 @@
 @import 'modules/burger.scss';
 @import 'modules/menu.scss';
 @import 'notebook';
+@import 'number-guesser.scss';
 
 :root {
   --text-color: rgb(24, 24, 24);
@@ -115,6 +116,8 @@
     position: absolute;
     top: 12rem;
     right: 12rem;
+    border: 30px solid rgba(0, 174, 255, 0.24);
+    box-sizing: content-box;
   }
 }
 
@@ -179,7 +182,7 @@
       align-items: center;
     }
     &__h1 {
-      font-size: 4.3rem;
+      font-size: 4rem;
     }
   }
 
