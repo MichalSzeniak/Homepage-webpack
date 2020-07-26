@@ -1,0 +1,29 @@
+.chuckNorrisJokes {
+    margin: 64px 0;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px gray solid;
+    border-bottom: 6px gray solid;
+    border-radius: 16px;
+}
+
+.jokens, .norris-title {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.jokens {
+    margin: 16px;
+    font-weight: normal;
+}
+
+.norris-title {
+    font-weight: bold;
+}
+
+.norrisIcon {
+    transform: scale(1.5);
+}

@@ -60,20 +60,22 @@
                 <a class="header__arrow--link" href="#projects"><img src="../assets/img/down.png" alt=""></a>
             </div>
         </header>
-        <div class="projects-container">
+        <div class="projects-container" id="projects">
             <section class="guesser">
                 <h2 class="guesser__title">Number Guesser</h2>
                 <h3 class="guesser__requirement">Enter the number 1-100</h3>
                 <p class="guesser__hint"></p>
                 <input class="guesser__input" type="text" disabled>
                 <button class="guesser__button">Guess</button>
-                <div class="guesser__buttons-left">
-                    <button class="remove1">-1</button>
-                    <button class="remove10">-10</button>
-                </div>
-                <div class="guesser__buttons-right">
-                    <button class="add1">+1</button>
-                    <button class="add10">+10</button>
+                <div class="guesser__buttons">
+                    <div class="guesser__buttons-left">
+                        <button class="remove1 btn">-1</button>
+                        <button class="remove10 btn">-10</button>
+                    </div>
+                    <div class="guesser__buttons-right">
+                        <button class="add1 btn">+1</button>
+                        <button class="add10 btn">+10</button>
+                    </div>
                 </div>
                 <span class="tries"></span>
                 <article class="win-screen">
@@ -81,9 +83,14 @@
                         <h2>CONGRATULATIONS</h2>
                         <span class="win-number"></span>
                         <span class="win-tries"></span>
-                        <button class="again">Play Again</button>
+                        <button class="again-button">Play Again</button>
                     </div>
                 </article>
+            </section>
+            <section class="chuckNorrisJokes">
+                    <h2 class="norris-title">Chuck Norris Jokes</h2>
+                    <h3 class="jokens"></h3>
+                    <img src="https://assets.chucknorris.host/img/avatar/chuck-norris.png" alt="" class="norrisIcon">    
             </section>
         </div>
     </main>

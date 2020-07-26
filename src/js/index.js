@@ -30,7 +30,6 @@ menuClose.addEventListener('click', ()=> {
 
 checkbox.addEventListener('click', ()=> {
     if (checkbox.checked == true) {
-      console.log("prawda");
       check.classList.add("checked");
       document.documentElement.style.setProperty('--text-color','white');
       document.documentElement.style.setProperty('--background-color','rgb(24, 24, 24)');

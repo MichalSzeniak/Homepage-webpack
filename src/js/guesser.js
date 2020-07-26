@@ -9,7 +9,7 @@ const remove10 = document.querySelector(".remove10");
 const add1 = document.querySelector(".add1");
 const add10 = document.querySelector(".add10");
 const winScreen = document.querySelector(".win-screen");
-const againButton = document.querySelector(".again");
+const againButton = document.querySelector(".again-button");
 const tries = document.querySelector(".tries");
 const winNumber = document.querySelector(".win-number");
 const winTries = document.querySelector(".win-tries");
@@ -80,15 +80,13 @@ guessButton.addEventListener('click', () => {
 
 
 let win = () => {
-    winScreen.style.display = "block";
     winScreen.classList.add("win-screen__display");
     winNumber.innerHTML = `You found the number: ${number}`;
-    winTries.innerHTML = `tries: ${triesCounter}`;
+    winTries.innerHTML = `tries: ${triesCounter + 1}`;
 }
 
 againButton.addEventListener('click', () => {
     init();
-    winScreen.style.display = "none";
     winScreen.classList.remove("win-screen__display");
 })
 
