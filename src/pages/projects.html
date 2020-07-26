@@ -26,8 +26,8 @@
         <ul class="menu__list">
             <li class="menu__list--item"><a class="menu__link menu__link--main" href="index.html">Homepage</a></li>
             <li class="menu__list--item"><a class="menu__link menu__link--notes" href="">Notes</a></li>
-            <li class="menu__list--item"><a class="menu__link menu__link--notebook "
-                    href="notebook.html">Notebook</a></li>
+            <li class="menu__list--item"><a class="menu__link menu__link--notebook " href="notebook.html">Notebook</a>
+            </li>
             <li class="menu__list--item"><a class="menu__link menu__link--tools" href="">Tools</a></li>
             <li class="menu__list--item"><a class="menu__link menu__link--projects here" href="">Projects</a></li>
         </ul>
@@ -66,7 +66,24 @@
                 <h3 class="guesser__requirement">Enter the number 1-100</h3>
                 <p class="guesser__hint"></p>
                 <input class="guesser__input" type="text" disabled>
-                <button class="guesser__button-guess">Guess</button>
+                <button class="guesser__button">Guess</button>
+                <div class="guesser__buttons-left">
+                    <button class="remove1">-1</button>
+                    <button class="remove10">-10</button>
+                </div>
+                <div class="guesser__buttons-right">
+                    <button class="add1">+1</button>
+                    <button class="add10">+10</button>
+                </div>
+                <span class="tries"></span>
+                <article class="win-screen">
+                    <div class="win-screen__container">
+                        <h2>CONGRATULATIONS</h2>
+                        <span class="win-number"></span>
+                        <span class="win-tries"></span>
+                        <button class="again">Play Again</button>
+                    </div>
+                </article>
             </section>
         </div>
     </main>
