@@ -1,0 +1,12 @@
+.notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__container {
+        margin: 16px;
+        padding: 16px 16px 16px 32px;
+        border: $blue 2px solid;
+        border-radius: 8px;
+    }
+}

@@ -8,6 +8,7 @@ module.exports = {
     notebook: "./src/js/notebook.js",
     projects: "./src/js/projects.js",
     guesser: "./src/js/guesser.js",
+    notes: "./src/js/notes.js"
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -70,6 +71,12 @@ module.exports = {
       inject: true,
       chunks: ["index", "projects", "guesser"],
       filename: "projects.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/notes.html",
+      inject: true,
+      chunks: ["index","notes" ],
+      filename: "notes.html",
     }),
   ],
 };

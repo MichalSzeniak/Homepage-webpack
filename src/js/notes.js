@@ -1,0 +1,1 @@
+const notesInput = document.querySelector(".notes__input");

@@ -24,8 +24,8 @@
       </svg>
     </button>
     <ul class="menu__list">
-      <li class="menu__list--item"><a class="menu__link menu__link--main here" href="index.html">Homepage</a></li>
-      <li class="menu__list--item"><a class="menu__link menu__link--notes" href="notes.html">Notes</a></li>
+      <li class="menu__list--item"><a class="menu__link menu__link--main" href="index.html">Homepage</a></li>
+      <li class="menu__list--item"><a class="menu__link menu__link--notes here" href="notes.html">Notes</a></li>
       <li class="menu__list--item"><a class="menu__link menu__link--notebook" href="notebook.html">Notebook</a></li>
       <li class="menu__list--item"><a class="menu__link menu__link--tools" href="">Tools</a></li>
       <li class="menu__list--item"><a class="menu__link menu__link--projects" href="projects.html">Projects</a></li>
@@ -52,22 +52,25 @@
   <main class="main">
     <header class="header">
       <div class="header__text-container">
-        <h1 class="header__h1">Michał</h1>
-        <p class="header__p">Mikelowski</p>
+        <h1 class="header__h1">Notes</h1>
+        <p class="header__p">To do</p>
       </div>
       <div class="header__arrow">
         <a class="header__arrow--link" href="#about"><img src="../assets/img/down.png" alt=""></a>
       </div>
     </header>
-    <section class="about" id="about">
-      <img class="about__me" src="../assets/img/Me.jpg" alt="">
-      <div class="about__me__circles"></div>
-      <div class="about__text-container">
-        <h2 class="about__h2">Hey I am Michał</h2>
-        <p class="about__p">I'm learning web development 🚀</p>
-      </div>
 
+    <section class="notes">
+        <h2 class="notes__title">Notes</h2>
+        <input class="notes__input" type="text" placeholder="Wpisz cos ;)">
+        <button class="confirm">Confirm</button>
+        <div class="notes__container">
+            <span class="content">Siema eniu</span>
+            <button>⨉</button>
+            <button>௹</button>
+        </div>
     </section>
+
   </main>
   <footer class="footer">
     <h2 class="footer__h2">Made by Mikelo Andżelo 🐱‍🏍</h2>
