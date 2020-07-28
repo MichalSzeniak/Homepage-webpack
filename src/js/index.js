@@ -58,3 +58,34 @@ window.addEventListener('scroll', () => {
       logo.classList.remove("logo__img--test")
     }
   })
+
+  
+// const apiUrl = 'http://api.punkapi.com/v2/beers/';
+
+// const getBeer = async (id) => {
+//   try {
+//     const response = await fetch(`${apiUrl}${id}`);
+//     const data = await response.json();
+//     return data;
+
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
+
+let piwko = () => {
+  fetch('http://api.punkapi.com/v2/beers/')
+  .then((resp) => resp.json())
+  .then((resp) => {
+      for (let sprawdzam of resp) {
+        const {id, description} = sprawdzam;
+        console.log(description)
+    }
+    console.log(resp);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+}
+
+piwko();

@@ -7,7 +7,7 @@ let test = () => {
     .then((resp) => resp.json())
     .then((resp) => {
         const { icon_url, value } = resp;
-        console.log(`${icon_url} ${value}`);
+        // console.log(`${icon_url} ${value}`);
   
         const chuckNorrisJokes = document.querySelector('.chuckNorrisJokes');
         // const JokesValue = `
