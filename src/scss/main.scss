@@ -10,6 +10,7 @@
 @import 'number-guesser.scss';
 @import 'projects.scss';
 @import 'notes.scss';
+@import 'tools.scss';
 
 :root {
   --text-color: rgb(24, 24, 24);
@@ -116,7 +117,7 @@
     height: 340px;
     border-radius: 50%;
     position: absolute;
-    top: 12rem;
+    top: 8rem;
     right: 12rem;
     border: 30px solid rgba(0, 174, 255, 0.24);
     box-sizing: content-box;

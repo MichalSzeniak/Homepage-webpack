@@ -28,6 +28,7 @@ menuClose.addEventListener('click', ()=> {
 });
 
 
+
 checkbox.addEventListener('click', ()=> {
     if (checkbox.checked == true) {
       check.classList.add("checked");
@@ -73,19 +74,19 @@ window.addEventListener('scroll', () => {
 //   }
 // };
 
-let piwko = () => {
-  fetch('http://api.punkapi.com/v2/beers/')
-  .then((resp) => resp.json())
-  .then((resp) => {
-      for (let sprawdzam of resp) {
-        const {id, description} = sprawdzam;
-        console.log(description)
-    }
-    console.log(resp);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
-}
+// let piwko = () => {
+//   fetch('http://api.punkapi.com/v2/beers/')
+//   .then((resp) => resp.json())
+//   .then((resp) => {
+//       for (let sprawdzam of resp) {
+//         const {id, description} = sprawdzam;
+//         console.log(description)
+//     }
+//     console.log(resp);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+// }
 
-piwko();
+// piwko();
