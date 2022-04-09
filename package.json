@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "gsap": "file:gsap-bonus.tgz",
-    "moment": "^2.26.0",
+    "moment": "^2.29.2",
     "normalize.css": "^8.0.1"
   }
 }
